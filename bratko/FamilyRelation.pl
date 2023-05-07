@@ -64,7 +64,10 @@ X\=Y. % X no es hna de sí misma
 %1.5 Defina la relación tia aunt(X, Y) en términos de las relaciones parent y sister.
 aunt(X, Y) :- sister(X, Z), parent(P, X), parent(P, Z), X\=Z, female(X). %
 
-%ancestro | recursividad
+
+%RECURSIVE
+
+%ancestro
 ancestor(X, Z) :- parent(X, Y). %ancestro directo
 %ancestor(abuelo, nieto) :- parent(abuelo, padre), ancestor(padre, nieto)
 ancestor(X, Z) :- parent(X, Y), ancestor(Y, Z). %ancestro indirecto 
