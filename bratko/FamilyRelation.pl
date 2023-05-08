@@ -40,7 +40,7 @@ male(jim).
 
 %Rules
 
-mother(X, Y) :- parent(X, Y), parent(Y, Z). %X es madre de Y si X es parent de Y y X es mujer
+mother(X, Y) :- parent(X, Y), parent(Y, Z). % X es madre de Y si X es parent de Y y X es mujer
 
 grandparent(X, Z) :- parent(X, Y). parent(Y, Z).% X es abuelo de Z si X es padre de Y y Y es padre de Z
 
@@ -68,7 +68,7 @@ aunt(X, Y) :- sister(X, Z), parent(P, X), parent(P, Z), X\=Z, female(X). %
 %RECURSIVE
 
 %ancestro
-ancestor(X, Z) :- parent(X, Y). %ancestro directo
+ancestor(X, Z) :- parent(X, Z). %ancestro directo
 %ancestor(abuelo, nieto) :- parent(abuelo, padre), ancestor(padre, nieto)
 ancestor(X, Z) :- parent(X, Y), ancestor(Y, Z). %ancestro indirecto 
 
