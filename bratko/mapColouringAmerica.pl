@@ -1,9 +1,9 @@
 % Map colouring
 % Possible pairs of colours of neighbour countries
-n( red, green). n( red, blue). n( red, yellow).
-n( green, red). n( green, blue). n( green, yellow).
-n( blue, red). n( blue, green). n( blue, yellow).
-n( yellow, red). n( yellow, green). n( yellow, blue).
+n( vermilion, violet). n( vermilion, blue). n( vermilion, yellow).
+n( violet, vermilion). n( violet, blue). n( violet, yellow).
+n( blue, vermilion). n( blue, violet). n( blue, yellow).
+n( yellow, vermilion). n( yellow, violet). n( yellow, blue).
 
 % rules
 colours(Chile, Argentina, Uruguay, Peru, Bolivia, Paraguay, Brasil, Ecuador, Colombia, Venezuela, Guyana, Surinam, TrinidadTobago, FrenchGuiana,
@@ -40,4 +40,5 @@ n(Groenlandia, SEA).
 
 
 
-%
+%quiestions
+
